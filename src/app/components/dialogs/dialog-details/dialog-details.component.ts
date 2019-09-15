@@ -9,7 +9,7 @@ import { DeviceService } from 'src/app/services/device.service';
 // Material Dialog
 //---------------------------
 import { MAT_DIALOG_DATA, MatDialog } from "@angular/material";
-import { MatDialogRef } from "@angular/material";
+import { MatDialogRef, MatIcon } from "@angular/material";
 import { DialogAddDeviceComponent } from '../dialog-add-device/dialog-add-device.component';
 
 

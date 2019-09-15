@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ListGatewayComponent } from './list-gateway.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 describe('ListGatewayComponent', () => {
   let component: ListGatewayComponent;

@@ -6,11 +6,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material';
 import { MatDialogModule } from '@angular/material/dialog'
 import { MatIconModule } from '@angular/material/icon'
-import { MatButtonModule} from '@angular/material/button'
+import { MatButtonModule } from '@angular/material/button'
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatCheckboxModule } from '@angular/material/checkbox'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
-import { MatInputModule} from '@angular/material'
+import { MatInputModule } from '@angular/material'
 import { MatSnackBarModule } from '@angular/material'
 
 //ROUTING
@@ -54,9 +54,22 @@ import { DialogAddGatewayComponent } from './components/dialogs/dialog-add-gatew
     MatInputModule,
     MatSnackBarModule
   ],
+  exports: [
+    //material modules
+    MatTableModule,
+    MatDialogModule,
+    MatIconModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatCheckboxModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatSnackBarModule
+  ],
   providers: [GatewayService, DeviceService],
   bootstrap: [AppComponent],
-  entryComponents: [ 
+  entryComponents: [
     DialogDetailsComponent,
     DialogAddDeviceComponent,
     DialogAddGatewayComponent

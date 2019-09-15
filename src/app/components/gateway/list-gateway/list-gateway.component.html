@@ -11,7 +11,7 @@
 	</div>
 	<br>
 
-	<table mat-table [dataSource]="gws" class="mat-elevation-z8">
+	<mat-table #table [dataSource]="gws" class="mat-elevation-z8">
 
 		<!-- Human Name Column -->
 		<ng-container matColumnDef="humanName">

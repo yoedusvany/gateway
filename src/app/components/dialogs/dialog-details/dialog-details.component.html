@@ -11,7 +11,7 @@
     </div>
     <br>
     <div *ngIf="devices.length != 0">
-        <table mat-table [dataSource]="devices" class="mat-elevation-z8" style="width: 100%">
+        <mat-table #table mat-table [dataSource]="devices" class="mat-elevation-z8" style="width: 100%">
             <!-- Vendor Column -->
             <ng-container matColumnDef="vendor">
                 <th mat-header-cell *matHeaderCellDef> Vendor </th>
@@ -40,7 +40,7 @@
 
             <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
             <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-        </table>
+            </table>
     </div>
 
     <br>

@@ -9,11 +9,12 @@ import { DeviceService } from 'src/app/services/device.service';
 import { FormBuilder } from '@angular/forms';
 import { FormGroup } from '@angular/forms';
 import { Validators } from '@angular/forms';
+import { MatFormField } from '@angular/material'
 
 //---------------------------
 // Material Dialog
 //---------------------------
-import { MAT_DIALOG_DATA, MatSnackBar } from "@angular/material";
+import { MAT_DIALOG_DATA, MatSnackBar, MatIcon } from "@angular/material";
 import { MatDialogRef } from "@angular/material";
 import { GatewayService } from 'src/app/services/gateway.service';
 
