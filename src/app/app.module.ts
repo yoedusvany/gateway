@@ -24,8 +24,6 @@ import { DeviceService } from './services/device.service';
 import { ListGatewayComponent } from './components/gateway/list-gateway/list-gateway.component';
 import { DialogDetailsComponent } from './components/dialogs/dialog-details/dialog-details.component';
 import { AppComponent } from './app.component';
-import { AboutComponent } from './components/about/about/about.component';
-import { NotfoundComponent } from './components/notfound/notfound/notfound.component';
 import { DialogAddDeviceComponent } from './components/dialogs/dialog-add-device/dialog-add-device.component';
 import { DialogAddGatewayComponent } from './components/dialogs/dialog-add-gateway/dialog-add-gateway.component';
 
@@ -33,8 +31,6 @@ import { DialogAddGatewayComponent } from './components/dialogs/dialog-add-gatew
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
-    NotfoundComponent,
     ListGatewayComponent,
     DialogDetailsComponent,
     DialogAddDeviceComponent,
