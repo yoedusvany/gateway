@@ -1,6 +1,7 @@
-export interface Device {
-    ID      :   Number,
+export interface DeviceI {
+    UID     :   Number,
     vendor  :   String,
     date    :   Date,
-    status  :   Boolean
+    status  :   Boolean,
+    gw_id   :   String
 }

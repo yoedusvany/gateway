@@ -1,0 +1,19 @@
+table {
+  width: 60%;
+}
+
+.hover-close:hover {
+  cursor: pointer;
+}
+
+.mat-sort-header-container {
+  display:flex;
+  justify-content:center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}

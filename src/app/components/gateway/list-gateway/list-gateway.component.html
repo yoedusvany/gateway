@@ -1,0 +1,41 @@
+<div style="text-align: center">
+	<h1>
+		Gateway Management
+	</h1>
+</div>
+<div class="center">
+	<div>
+		<div style="text-align: left">
+			<button mat-raised-button color="primary" (click)="addGateway()">Add</button>
+		</div>
+	</div>
+	<br>
+
+	<table mat-table [dataSource]="gws" class="mat-elevation-z8">
+
+		<!-- Human Name Column -->
+		<ng-container matColumnDef="humanName">
+			<th mat-header-cell *matHeaderCellDef> Human Name. </th>
+			<td mat-cell *matCellDef="let element"> {{element.humanName}} </td>
+		</ng-container>
+
+		<!-- IP Column -->
+		<ng-container matColumnDef="ip">
+			<th mat-header-cell *matHeaderCellDef> IP </th>
+			<td mat-cell *matCellDef="let element"> {{element.ip}} </td>
+		</ng-container>
+
+		<!--Action column-->
+		<ng-container matColumnDef="actions">
+			<th mat-header-cell *matHeaderCellDef> Action </th>
+			<td mat-cell *matCellDef="let element">
+				<button mat-raised-button color="primary" (click)="addDevice(element)">Add Device</button>
+				<button mat-raised-button color="warn" (click)="removeGateway(element)">Remove</button>
+			</td>
+		</ng-container>
+
+		<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+		<tr mat-row *matRowDef="let row; columns: displayedColumns;"
+			class="hover-close"></tr>
+	</table>
+</div>

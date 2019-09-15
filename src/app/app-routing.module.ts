@@ -4,8 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AboutComponent } from './components/about/about/about.component';
 import { NotfoundComponent } from './components/notfound/notfound/notfound.component';
-import { ListComponent as GatewayList } from './components/gateway/list/list.component';
-import { ListComponent as DeviceList} from './components/devices/list/list.component';
+import { ListGatewayComponent } from './components/gateway/list-gateway/list-gateway.component';
 
 
 const routes: Routes = [
@@ -16,12 +15,12 @@ const routes: Routes = [
   },
   {
     path: 'gateway',
-    component: GatewayList
+    component: ListGatewayComponent
   },
-  {
+  /*{
     path: 'device',
     component: DeviceList
-  },
+  },*/
   {
     path: 'about',
     component: AboutComponent

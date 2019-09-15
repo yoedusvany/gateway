@@ -1,0 +1,12 @@
+.color-red {
+  color: red
+}
+
+.hover-close:hover {
+  cursor: pointer;
+}
+
+::ng-deep .mat-sort-header-container {
+  display:flex;
+  justify-content:center;
+}

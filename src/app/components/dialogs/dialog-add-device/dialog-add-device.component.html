@@ -1,0 +1,32 @@
+<div style="text-align: right">
+    <mat-icon (click)="closeDialog()" class="hover-close">close</mat-icon>
+</div>
+
+
+<h2 mat-dialog-title>Add Device to Gateway: {{ gw.humanName}} - {{gw.ip}}</h2>
+
+<mat-dialog-content style="text-align: center">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+        <mat-form-field class="input-width">
+            <input matInput placeholder="UID" formControlName="uid" type="number">
+        </mat-form-field>
+        <mat-form-field class="input-width">
+            <input matInput placeholder="Vendor" formControlName="vendor">
+        </mat-form-field>
+
+        <br>
+        <mat-checkbox [checked]="status" formControlName="status">Status</mat-checkbox>
+
+
+        <div class="text-center">
+            <br>
+            <button mat-raised-button type="button" (click)="closeDialog()">Cancel</button>
+            <button mat-raised-button color="primary" type="submit" [disabled]="!form.valid">Submit</button>
+        </div>
+
+    </form>
+
+</mat-dialog-content>
+
+<mat-dialog-actions>
+</mat-dialog-actions>
