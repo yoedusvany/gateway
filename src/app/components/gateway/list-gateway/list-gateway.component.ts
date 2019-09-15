@@ -12,10 +12,10 @@ import { DialogAddGatewayComponent } from '../../dialogs/dialog-add-gateway/dial
   styleUrls: ['./list-gateway.component.css']
 })
 export class ListGatewayComponent implements OnInit {
-  private gws: GatewayI[] = [];
-  private gwSelected: GatewayI;
+  public gws: GatewayI[] = [];
+  public gwSelected: GatewayI;
 
-  private displayedColumns = ['humanName', 'ip', 'actions'];
+  public displayedColumns = ['humanName', 'ip', 'actions'];
 
   encapsulation: ViewEncapsulation.None;
 
