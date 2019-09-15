@@ -25,6 +25,8 @@ export class DialogDetailsComponent implements OnInit {
   // Public Fields Section
   //---------------------------------------------------------------------------
   public devices: DeviceI[] = [];
+  public displayedColumns = ['vendor', 'date', 'status', 'actions'];
+  public gw : GatewayI;
 
 
   //---------------------------------------------------------------------------
@@ -32,8 +34,8 @@ export class DialogDetailsComponent implements OnInit {
   //---------------------------------------------------------------------------
   private dialogRef: MatDialogRef<DialogDetailsComponent>;
   private dialogRef1: MatDialogRef<DialogAddDeviceComponent>;
-  private gw : GatewayI;
-  private displayedColumns = ['vendor', 'date', 'status', 'actions'];
+  
+  
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: any,

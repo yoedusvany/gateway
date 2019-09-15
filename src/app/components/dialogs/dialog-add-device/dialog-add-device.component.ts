@@ -24,18 +24,20 @@ import { MatDialogRef } from "@angular/material";
 })
 export class DialogAddDeviceComponent implements OnInit {
   public form: FormGroup;
+  public uid: string;
+  public vendor: string;
+  public date: Date = new Date();
+  public status: boolean = false;
+  public gw: GatewayI;
 
   //---------------------------------------------------------------------------
   // Private Fields Section
   //---------------------------------------------------------------------------
   private dialogRef: MatDialogRef<DialogAddDeviceComponent>;
-  private gw: GatewayI;
+  
   private fb: FormBuilder;
 
-  private uid: string;
-  private vendor: string;
-  private date: Date = new Date();
-  private status: boolean = false;
+  
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: any,

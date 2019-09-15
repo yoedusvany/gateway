@@ -27,6 +27,8 @@ import { GatewayService } from 'src/app/services/gateway.service';
 export class DialogAddGatewayComponent implements OnInit {
 
   public form: FormGroup;
+  public ip: string;
+  public humanName: string;
 
   //---------------------------------------------------------------------------
   // Private Fields Section
@@ -34,8 +36,6 @@ export class DialogAddGatewayComponent implements OnInit {
   private dialogRef: MatDialogRef<DialogAddGatewayComponent>;
   private fb: FormBuilder;
 
-  private humanName: string;
-  private ip: string;
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: any,
